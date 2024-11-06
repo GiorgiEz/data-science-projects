@@ -4,4 +4,3 @@ This repository contains a collection of data science projects developed using P
 - Data Cleaning: Projects focused on cleaning and preprocessing datasets to prepare them for analysis.
 - Image Manipulation: Techniques to process and analyze images for insights and feature extraction.
 - File Processing: Projects involving the handling and analysis of structured and unstructured data files.
-- Visualizations: Visual representations of data trends and patterns using Matplotlib and Seaborn.
