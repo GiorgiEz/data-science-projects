@@ -1,5 +1,0 @@
-Top Student: David
-Average Grade: 97.0
-Math: 96
-Science: 95
-History: 100
