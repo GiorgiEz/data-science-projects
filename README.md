@@ -1,6 +1,7 @@
 # Data Science Projects
 This repository contains a collection of data science projects developed using Python. Each project demonstrates various techniques and skills in data analysis, data preprocessing, visualization, and image manipulation. These projects highlight practical applications in data science, including data cleaning, file processing, and visual analytics.
 # Contents
-- Data Cleaning: Projects focused on cleaning and preprocessing datasets to prepare them for analysis.
-- Image Manipulation: Techniques to process and analyze images for insights and feature extraction.
-- File Processing: Projects involving the handling and analysis of structured and unstructured data files.
+- Data Cleaning: Project focused on cleaning and preprocessing datasets to prepare them for analysis.
+- Image Manipulation: Image manipulation using Numpy.
+- File Processing: Project working with files in Python.
+- Data Storytelling: This project showcases the application of visualization, clustering, regression, and other analytical methods to uncover actionable insights and craft data-driven narratives.
