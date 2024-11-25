@@ -5,3 +5,4 @@ This repository contains a collection of data science projects developed using P
 - Image Manipulation: Image manipulation using Numpy.
 - File Processing: Project working with files in Python.
 - Data Storytelling: This project showcases the application of visualization, clustering, regression, and other analytical methods to uncover actionable insights and craft data-driven narratives.
+- House Price Prediction: Training different models to predict house prices and analyzing impact of different locational features
