@@ -7,7 +7,7 @@
     <list default="true" id="613e7f13-d692-4eec-931f-94b69811d5f0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/HousePricePrediction/HousePricePrediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/HousePricePrediction/HousePricePrediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +34,12 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.CustomerChurnPrediction.executor&quot;: &quot;Run&quot;,
     &quot;Python.HousePricePrediction.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;house-price-prediction&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lipar/PythonProjects/data-science-projects/Projects/HousePricePrediction&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;customer-churn-prediction&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lipar/PythonProjects/data-science-projects/Projects/CustomerChurnPrediction&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -50,10 +51,34 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lipar\PythonProjects\data-science-projects\Projects\CustomerChurnPrediction" />
       <recent name="C:\Users\lipar\PythonProjects\data-science-projects\Projects\HousePricePrediction" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.CustomerChurnPrediction">
+    <configuration name="CustomerChurnPrediction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="data-science-projects" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Projects/CustomerChurnPrediction" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Projects/CustomerChurnPrediction/CustomerChurnPrediction.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="HousePricePrediction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="data-science-projects" />
       <option name="ENV_FILES" value="" />
@@ -79,6 +104,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.CustomerChurnPrediction" />
         <item itemvalue="Python.HousePricePrediction" />
       </list>
     </recent_temporary>
@@ -101,13 +127,19 @@
       <updated>1732457808650</updated>
       <workItem from="1732457809872" duration="3757000" />
       <workItem from="1732529070824" duration="20988000" />
+      <workItem from="1732977054231" duration="7903000" />
+      <workItem from="1733037284149" duration="409000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/data_science_projects$HousePricePrediction.coverage" NAME="HousePricePrediction Coverage Results" MODIFIED="1732553717041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Projects/HousePricePrediction" />
+    <SUITE FILE_PATH="coverage/data_science_projects$CustomerChurnPrediction.coverage" NAME="CustomerChurnPrediction Coverage Results" MODIFIED="1733037462886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Projects/CustomerChurnPrediction" />
   </component>
 </project>
