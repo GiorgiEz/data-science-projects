@@ -1,9 +1,9 @@
-README: Student Grades Processing Script
+# README: Student Grades Processing Script
 
-Overview
+# Overview
 This Python project automates the creation, processing, and analysis of student grades. The script generates random grades for students, calculates their averages, identifies the top-performing student, and saves the results in text files.
 
-Features
+# Features
 Random Data Generation: Creates random grades for 5 students across 3 subjects.
 File Handling:
   Generates two files:
@@ -13,5 +13,5 @@ File Handling:
 Data Processing: Calculates the average grades for each student.
 Top Student Identification: Determines the student with the highest average grade.
 
-Output:
+# Output:
 Saves the top student’s name, average grade, and individual subject grades in top_student.txt.
