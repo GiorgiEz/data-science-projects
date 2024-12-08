@@ -8,7 +8,7 @@ from sklearn.preprocessing import StandardScaler
 from scipy.stats import linregress
 
 
-# Task 1: Analyze Conversion Rate Drivers
+# Task1: Analyze Conversion Rate Drivers
 def analyze_conversion_rate_drivers():
     """
     Description:
@@ -421,7 +421,7 @@ if __name__ == '__main__':
     # Load the dataset
     df = pd.read_csv("sample_data.csv")
 
-    """ Task 1: Analyze Conversion Rate Drivers """
+    """ Task1: Analyze Conversion Rate Drivers """
     # analyze_conversion_rate_drivers()
 
     """ Task 2: Click-Through Rate Analysis """

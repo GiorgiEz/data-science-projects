@@ -15,7 +15,7 @@ from xgboost import XGBClassifier
 
 
 
-# Task 1: Initial Data Analysis
+# Task1: Initial Data Analysis
 def initial_data_analysis():
     """ Objective: Analyze basic patterns in customer churn data. """
 
@@ -248,7 +248,7 @@ def model_comparison():
 if __name__ == '__main__':
     df = pd.read_csv('customer_churn_data.csv')
 
-    """ Task 1: Initial Data Analysis """
+    """ Task1: Initial Data Analysis """
     initial_data_analysis()
 
     """ Task 2: Feature Relationship Analysis """
