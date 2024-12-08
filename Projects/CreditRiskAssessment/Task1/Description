@@ -1,0 +1,49 @@
+Labeling the Components:
+    * Root Node:
+        - Credit Score >= 600
+            This is the starting point of the tree and divides the dataset into two broad categories:
+            customers with acceptable credit scores and those with lower credit scores.
+
+    * Internal Nodes:
+        - annual_income >= 40,000
+            This node further refines the group of customers with low credit scores, assessing their
+            financial stability based on income.
+
+        - Employment Duration >= 4
+            This node evaluates customers with acceptable credit scores based on their job stability.
+
+        - existing_debt >= 5,000
+            This node assesses customers' financial obligations relative to their income.
+
+    * Leaf Nodes:
+        - Low Risk: Represents customers who are financially stable and likely to repay the loan.
+        - Medium Risk: Indicates moderate credit risk due to one or more concerning factors
+            (e.g., shorter employment duration or higher existing debt).
+        - High Risk: Represents customers with significant risk factors such as low income, high debt,
+            or poor credit scores.
+
+    * Branches:
+        Each edge (arrow) connecting the nodes represents a decision or split based on the criteria at
+        the parent node (e.g., Credit Score >= 600 is either True or False).
+
+
+Splitting Criteria Explanation
+    * Credit Score >= 600:
+        Credit score is a primary indicator of creditworthiness, reflecting customers' financial behavior and
+        risk of default.
+        Criteria: Splits customers into those with a good credit score (True) and those with a lower score (False).
+
+    * annual_income >= 40,000:
+        Income determines the ability to handle existing and new financial obligations.
+        Criteria: Distinguishes between low-income customers who may struggle to repay loans and higher-income
+        customers who are financially stable.
+
+    * Employment Duration >= 2:
+        Job stability often correlates with financial reliability, with longer employment duration
+        indicating stable income.
+        Criteria: Divides customers into those with secure jobs (True) and those with unstable employment (False).
+
+    * existing_debt >= 5,000:
+        High levels of existing debt increase financial pressure and risk of default.
+        Criteria: Differentiates customers with manageable debt (False) from those with potentially
+        unmanageable debt (True).
