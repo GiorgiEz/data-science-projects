@@ -1,7 +1,7 @@
 # Data Science Projects
 This repository contains a collection of data science projects developed using Python. Projects demonstrate various techniques and skills in data analysis, data preprocessing, visualization, image manipulation and training prediction models. These projects highlight practical applications in data science, including data cleaning, file processing, model training for prediction and visual analytics.
 
-Tech Stack: Python, Numpy, Pandas, Seaborn, matplotlib and scikit-learn.
+Tech Stack: Python, Numpy, Pandas, Seaborn, matplotlib and sklearn.
 
 # Contents
 - File Processing: Project working with files in Python.
