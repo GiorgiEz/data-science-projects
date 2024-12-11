@@ -1,4 +1,4 @@
-# README: Student Grades Processing Script
+# Student Grades Processing Script
 
 # Overview
 This Python project automates the creation, processing, and analysis of student grades. The script generates random grades for students, calculates their averages, identifies the top-performing student, and saves the results in text files.
