@@ -38,7 +38,7 @@ Place the image you want to manipulate in the project directory. Update the `ima
 ### 2. Run the Script
 Execute the script by running:
 ```bash
-python main.py
+python ImageManipulation.py
 ```
 
 ### 3. Outputs
