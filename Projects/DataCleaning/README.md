@@ -1,4 +1,4 @@
-# Project: Data Cleaning and Analysis
+# Data Cleaning and Analysis
 
 ## Overview
 This project involves cleaning and analyzing a messy dataset. The tasks include handling missing data, removing duplicates, correcting data types, handling outliers, correcting date formats, and performing advanced data manipulation. Finally, the cleaned dataset is saved as `cleaned_dataset.csv`.
