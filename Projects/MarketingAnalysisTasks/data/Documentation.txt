@@ -1,0 +1,149 @@
+DATASET DOCUMENTATION FOR MARKETING ANALYSIS TASKS
+===============================================
+
+1. DATASET OVERVIEW
+------------------
+
+A. customer_data.csv
+-------------------
+Customer demographic and preference information containing:
+- customer_id: Unique identifier
+- age: Customer age
+- income: Annual income
+- engagement_score: Customer engagement level (1-100)
+- loyalty_years: Years as customer
+- region: Geographic region (North, South, East, West)
+- gender: Customer gender (M/F)
+- channel_preference: Preferred shopping channel (Online, Store, Mobile)
+- membership_tier: Customer tier (Bronze, Silver, Gold, Platinum)
+
+B. transaction_data.csv
+----------------------
+Transaction records containing:
+- customer_id: Unique identifier linking to customer_data
+- date: Transaction date
+- category: Product category (Electronics, Clothing, Food, Home, Beauty)
+- amount: Transaction amount
+- channel: Purchase channel
+- satisfaction_score: Customer satisfaction rating (1-10)
+
+2. TASK-SPECIFIC DATASET USAGE
+-----------------------------
+
+TASK 1: Customer Lifetime Value Analysis
+Required Files:
+- Primary: transaction_data.csv
+- Secondary: customer_data.csv
+Key Columns: customer_id, amount, date, loyalty_years
+Analysis Focus: Calculate customer value over time using transaction history and loyalty data
+
+TASK 2: Seasonal Trend Analysis
+Required Files:
+- Primary: transaction_data.csv
+Key Columns: date, amount, category
+Analysis Focus: Identify sales patterns across different time periods
+
+TASK 3: Channel Performance Optimization
+Required Files:
+- Primary: transaction_data.csv
+- Secondary: customer_data.csv
+Key Columns: channel, amount, satisfaction_score, channel_preference
+Analysis Focus: Compare performance metrics across different sales channels
+
+TASK 4: Customer Churn Risk Analysis
+Required Files:
+- Primary: transaction_data.csv
+- Secondary: customer_data.csv
+Key Columns: customer_id, date, amount, engagement_score
+Analysis Focus: Identify at-risk customers based on transaction patterns
+
+TASK 5: Product Category Analysis
+Required Files:
+- Primary: transaction_data.csv
+Key Columns: category, amount, satisfaction_score, customer_id
+Analysis Focus: Analyze performance and preferences by product category
+
+TASK 6: Customer Satisfaction Analysis
+Required Files:
+- Primary: transaction_data.csv
+- Secondary: customer_data.csv
+Key Columns: satisfaction_score, date, membership_tier
+Analysis Focus: Track satisfaction trends and segment-specific patterns
+
+TASK 7: Region-Based Performance Analysis
+Required Files:
+- Primary: customer_data.csv
+- Secondary: transaction_data.csv
+Key Columns: region, customer_id, amount
+Analysis Focus: Compare performance metrics across regions
+
+TASK 8: Marketing Campaign Effectiveness
+Required Files:
+- Primary: customer_data.csv
+- Secondary: transaction_data.csv
+Key Columns: customer_id, membership_tier, channel_preference
+Analysis Focus: Measure campaign impact across different customer segments
+
+TASK 9: Customer Segmentation Evolution
+Required Files:
+- Primary: transaction_data.csv
+- Secondary: customer_data.csv
+Key Columns: customer_id, date, amount, engagement_score
+Analysis Focus: Track changes in customer segments over time
+
+TASK 10: Predictive Sales Analytics
+Required Files:
+- Primary: transaction_data.csv
+Key Columns: date, amount, category
+Analysis Focus: Forecast future sales using historical patterns
+
+3. DATA PREPARATION CODE EXAMPLES
+-------------------------------
+
+A. Date Conversion:
+------------------
+transactions_df['date'] = pd.to_datetime(transactions_df['date'])
+
+B. Merging Datasets:
+-------------------
+merged_df = transactions_df.merge(customers_df, on='customer_id')
+
+C. Common Aggregations:
+----------------------
+# Daily sales
+daily_sales = transactions_df.groupby('date')['amount'].sum()
+
+# Customer metrics
+customer_metrics = transactions_df.groupby('customer_id').agg({
+    'amount': ['sum', 'mean', 'count'],
+    'satisfaction_score': 'mean'
+})
+
+4. DATA QUALITY CHECKLIST
+------------------------
+
+Before starting analysis:
+1. Check for missing values in key columns
+2. Verify date ranges are complete
+3. Ensure customer_id links between datasets
+4. Validate value ranges:
+   - satisfaction_score should be between 1-10
+   - engagement_score should be between 1-100
+   - amount should be greater than 0
+
+Validation Code:
+def validate_data(customers_df, transactions_df):
+    checks = {
+        'missing_values': {
+            'customers': customers_df.isnull().sum(),
+            'transactions': transactions_df.isnull().sum()
+        },
+        'value_ranges': {
+            'satisfaction': transactions_df['satisfaction_score'].between(1, 10).all(),
+            'engagement': customers_df['engagement_score'].between(1, 100).all(),
+            'amount': (transactions_df['amount'] > 0).all()
+        },
+        'customer_linkage': set(transactions_df['customer_id']).issubset(
+            set(customers_df['customer_id']))
+    }
+    return checks
