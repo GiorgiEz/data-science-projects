@@ -8,8 +8,6 @@ from tasks.t5_ProductCategoryAnalysis import product_category_analysis
 from tasks.t6_CustomerSatisfactionAnalysis import customer_satisfaction_analysis
 from tasks.t7_RegionBasedPerformanceAnalysis import region_based_performance_analysis
 from tasks.t8_MarketingCampaignEffectiveness import marketing_campaign_effectiveness
-from tasks.t9_CustomerSegmentationEvolution import customer_segmentation_evolution
-from tasks.t10_PredictiveSalesAnalytics import predictive_sales_analytics
 
 
 
@@ -19,7 +17,6 @@ if __name__ == '__main__':
 
     preparation = DataPreparation(customers_df, transactions_df) # Initializes the data preparation class
     preparation.transactions_date_conversion() # Convert date
-    # preparation.validate_data() # Checks for missing values and for data ranges
     merged_df = preparation.merge_dataframes() # Merges customers and transactions dataframes
 
     """ Task 1: Customer Lifetime Value Analysis """
@@ -45,9 +42,3 @@ if __name__ == '__main__':
 
     """ Task 8: Marketing Campaign Effectiveness """
     marketing_campaign_effectiveness(customers_df, transactions_df, merged_df)
-
-    """ Task 9: Customer Segmentation Evolution """
-    customer_segmentation_evolution(customers_df, transactions_df, merged_df)
-
-    """ Task 10: Predictive Sales Analytics """
-    predictive_sales_analytics(customers_df, transactions_df, merged_df)
