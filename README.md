@@ -11,3 +11,4 @@ Tech Stack: Python, Numpy, Pandas, Seaborn, matplotlib and sklearn.
 - House Price Prediction: Training different models to predict house prices and analyzing impact of different locational features
 - Customer Churn Prediction: Checking the correlation between customer churn and different numerical values. Training logistic, Random Forest and XGBoost models and comparing model performances using ROC curves, accuracy, precision and recall.
 - Credit Risk Assessment: Implementing Decision Trees using Gini and Entropy, comparing them by calculating accuracy, node impurities and information gain. Choosing the best model by trying out different parameters, handling class imbalance and analyzing confusion matrix, precision/recall/F1-score, ROC curve and AUC score of decision tree model.
+- Marketing Analysis Tasks: 
